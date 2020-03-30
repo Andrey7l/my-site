@@ -13,7 +13,7 @@ def view(r):
 def foto(r):
     index = here.parent.parent / "foto.jpg"
     with index.open("rb") as f:
-        return HttpResponse(src.read(), content_type="image/jpeg")
+        return HttpResponse(f.read(), content_type="image/jpeg")
 
 urlpatterns = [
     path('admin/', admin.site.urls),

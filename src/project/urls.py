@@ -10,9 +10,13 @@ def view(r):
     index = here.parent.parent / "index.html"
     with index.open() as f:
         return HttpResponse(f.read())
-
+def foto(rb):
+    index = here.parent.parent / "foto.jpg"
+    with index.open("rb") as f:
+        return HttpResponse(src.read(), content_type= "image/jpeg")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', view),
+    path('foto.jpg', foto)
 ]

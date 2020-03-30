@@ -25,7 +25,9 @@ SECRET_KEY = 'lbt#79-i_9#$^3b8!&#z=c^%z1*b&*m^u$erw*^e3vciini^e5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1",
+    "localhost",
+    "samoyed1.herokuapp.com",]
 
 
 # Application definition

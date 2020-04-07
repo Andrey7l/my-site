@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-    <title> contacts </title>
-        <link rel="stylesheet" href="main.css">
+{% extends "base.html" %}
+{% load static %}
+{% block title %}contacts{% endblock %}
 
-</head>
-<body >
 
-<div class="head_block2">
 
-    <div class="fist_row">
+
+ {% block header %}<div class="head_block2">{% endblock %}
+
+    <!--<div class="fist_row">
 
         <a href="index.html">
            <img  src="logotip.png" >
@@ -24,9 +21,9 @@
 
     </div>
 
-    <div class="second_block">
+    <div class="second_block"> --!>
 
-        <div class="text_block">
+        {% block main %}<div class="text_block">
             <span class="title">Добро подаловать в каталог</span>
                         <br> <br>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -40,6 +37,7 @@
             In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
             Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
         </div>
+{% endblock %}
 
 <!--        <div class="button">-->
 <!--            <div class="column">-->
@@ -48,19 +46,16 @@
 <!--        </div>-->
 
 
-    </div>
 
 
-</div>
-
-<div class="catalogs_block">
+{% block button %}<div class="catalogs_block">
 
  <span class="wuth title">Каталог</span>
 
     <div class="cards_block">
 
         <div class="card_main">
-                <img class="imag_size" src="foto/borodinsky.jpeg">
+                <img class="imag_size" src="{% static 'foto/borodinsky.jpeg' %}">
             <span class="title"> Бородинский (на закваске) </span>
              <span class="text"><ul>
                      <li>Ржаная цельнозерновая мука (далее ц/з) </li>
@@ -76,7 +71,7 @@
 
         </div>
         <div class="card_main">
-                <img class="imag_size" src="foto/rustic.jpg">
+                <img class="imag_size" src="{% static 'foto/rustic.jpg' %}">
             <span class="title"> Деревенский (на закваске) </span>
              <span class="text">
                  <ul>
@@ -95,7 +90,7 @@
 
         </div>
         <div class="card_main">
-                <img class="imag_size" src="foto/farmers.jpeg">
+                <img class="imag_size" src="{% static 'foto/farmers.jpeg' %}">
             <span class="title"> Фермерский (закваска+дрожжи) </span>
              <span class="text">
                  <ul>
@@ -111,7 +106,7 @@
 
         </div>
         <div class="card_main">
-                <img class="imag_size" src="foto/finsky_dried_fruits.jpeg">
+                <img class="imag_size" src="{% static 'foto/finsky_dried_fruits.jpeg' %}">
             <span class="title"> Финский с сухофруктами (на закваске) </span>
              <span class="text">
                  <ul>
@@ -128,7 +123,7 @@
 
         </div>
         <div class="card_main">
-                <img class="imag_size" src="foto/wheat_linen.jpg">
+                <img class="imag_size" src="{% static 'foto/wheat_linen.jpg' %}">
             <span class="title"> Пшеничный со льном (на закваске) </span>
              <span class="text">
                  <ul>
@@ -144,7 +139,7 @@
 
         </div>
         <div class="card_main">
-                <img class="imag_size" src="foto/potato_yeast.jpg">
+                <img class="imag_size" src="{% static 'foto/potato_yeast.jpg' %}">
             <span class="title"> Картофельный (дрожжевой) </span>
              <span class="text">
                  <ul>
@@ -162,7 +157,7 @@
 
         </div>
         <div class="card_main">
-                <img class="imag_size" src="foto/wheat_leaven.jpg">
+                <img class="imag_size" src="{% static 'foto/wheat_leaven.jpg' %}">
             <span class="title"> Пшеничный хлеб ( на закваске) </span>
              <span class="text">
                  <ul>
@@ -179,7 +174,7 @@
 
         </div>
         <div class="card_main">
-                <img class="imag_size" src="foto/baguette.jpeg">
+                <img class="imag_size" src="{% static 'foto/baguette.jpeg' %}">
             <span class="title"> Багет (на закваске/на пивной опаре) </span>
              <span class="text">
                  <ul>
@@ -195,7 +190,7 @@
 
         </div>
         <div class="card_main">
-                <img class="imag_size" src="foto/buckwheat_prunes_bow.jpg">
+                <img class="imag_size" src="{% static 'foto/buckwheat_prunes_bow.jpg' %}">
             <span class="title"> Гречневый с черносливом/луком (на закваске) </span>
              <span class="text">
                  <ul>
@@ -216,7 +211,5 @@
     </div>
 
 
-</div>
+</div>{% endblock %}
 
-</body>
-</html>

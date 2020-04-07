@@ -1,17 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title> pizzapechka </title>
-    <link rel="stylesheet" href="main.css">
+   <title> {% block title %}{% endblock %} </title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
 </head>
 <body >
+  {% block header %}{% endblock %}
 
-<div class="head_block">
-
-    <div class="fist_row">
-
-        <img src="logotip.png">
+   <div class="fist_row">
+<a href="index.html">
+        <img src= "{% static 'index/logotip.png' %}" >
+    </a>
 
         <div class="links_block">
             <div class="link_1">О нас</div>
@@ -22,34 +23,15 @@
     </div>
 
     <div class="second_block">
-
-        <div class="text_block">
-            <span class="title">Мы вам всегда рады !</span>
-                        <br> <br>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-            eu, pretium quis, sem.
-            <br> <br>
-            Nulla consequat massa quis enim. Donec
-            pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-            Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-        </div>
-
-        <div class="button">
-            <div class="column">
-                <span class="btn">Подробнее</span>
-            </div>
-        </div>
+{% block main %}{% endblock %}
+       {% block button %}{% endblock %}
 
 
     </div>
 
 
 </div>
-
+{% block catalog %}{% endblock %}
 
 
 </body>

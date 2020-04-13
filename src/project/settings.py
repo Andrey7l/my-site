@@ -1,3 +1,4 @@
+from os import getenv
 
 import dj_database_url
 from dynaconf import settings as _settings

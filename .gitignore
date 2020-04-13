@@ -1,3 +1,4 @@
+.secrets.*
 Pipfile.lock
 .idea/
 # -U andrey -W -h localhost -d andrey_basa

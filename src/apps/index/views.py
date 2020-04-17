@@ -10,7 +10,7 @@ from django.views.generic import TemplateView
 
 from apps.index.models import UserInfo
 
-
+#fff
 class IndexView(TemplateView):
     template_name = "index/index.html"
 

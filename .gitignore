@@ -5,6 +5,7 @@ Pipfile.lock
 # andrey_basa=> insert into index_userinfo (greatting) values ('xxx');
 # Byte-compiled / optimized / DLL files
 # python src/manage.py makemigration
+# python src/manage.py migrate
 #from apps.index.models import UserInfo (взяли модель из приложения и импортировали)
 # select * from index_userinfo; - в psql команда ()
 

@@ -5,18 +5,8 @@
 
 {% block header %}<div class="head_block">{% endblock %}
        {% block main %} <div class="text_block">
-             <span class="title">Мы вам всегда рады !</span>
-                        <br> <br>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-            eu, pretium quis, sem.
-            <br> <br>
-            Nulla consequat massa quis enim. Donec
-            pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-            Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+             <span class="title">{{name}}</span>
+        {{greeting | safe}}
         </div>
 {% endblock %}
 {% block button %}<div class="button">

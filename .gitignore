@@ -1,8 +1,16 @@
 .secrets.*
 Pipfile.lock
 .idea/
-# -U andrey -W -h localhost -d andrey_basa
+#psql -U andrey -W -h localhost -d andrey_basa
+# andrey_basa=> insert into index_userinfo (greatting) values ('xxx');
 # Byte-compiled / optimized / DLL files
+# python src/manage.py makemigration
+# python src/manage.py migrate
+#from apps.index.models import UserInfo (взяли модель из приложения и импортировали)
+# select * from index_userinfo; - в psql команда ()
+
+
+
 __pycache__/
 *.py[cod]
 *$py.class
